@@ -1,74 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Heidi Gui</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div class="page">
+  <div class="site">
 
-    <aside class="sidebar">
-      <div class="box profile">
-        <h2>Heidi Gui</h2>
-        <p>physics student @ OSU</p>
-        <p>astroparticle physics ✦ art ✦ radio neutrinos</p>
-      </div>
+    <nav class="top-nav">
+      <a href="#home">Home</a> |
+      <a href="#about">About</a> |
+      <a href="#research">Research</a> |
+      <a href="#projects">Projects</a> |
+      <a href="#contact">Contact</a>
+    </nav>
 
-      <div class="box">
-        <h3>Navigation</h3>
-        <a href="#about">about me</a>
-        <a href="#research">research</a>
-        <a href="#projects">projects</a>
-        <a href="#contact">contact</a>
-      </div>
+    <div class="layout">
 
-      <div class="box">
-        <h3>Status</h3>
-        <p>currently: debugging simulations</p>
-        <p>mood: curious :3</p>
-      </div>
-    </aside>
+      <aside class="left-column">
+        <div class="box banner-box">
+          <p>Edit Your Profile</p>
+        </div>
 
-    <main class="content">
-      <section class="hero box">
-        <h1>welcome to heidi's website</h1>
-        <p>personal site, research archive, and tiny corner of the internet ✧</p>
-      </section>
+        <div class="box image-box">
+          <img src="assets/profile.jpg" alt="Profile photo" />
+          <h3>Heidi ✦ Latest Updates</h3>
+          <p>Physics, art, simulations, and tiny internet chaos.</p>
+        </div>
 
-      <section id="about" class="box">
-        <h2>About Me</h2>
-        <p>
-          I am an undergraduate physics student at The Ohio State University interested in
-          astroparticle physics, particle physics, detector instrumentation, and the creative
-          overlap between science and art.
-        </p>
-      </section>
+        <div class="box">
+          <h2>Heidi's Blurbs</h2>
+          <p>
+            This is a small personal website for research, projects,
+            art, and other things I like.
+          </p>
+        </div>
+      </aside>
 
-      <section id="research" class="box">
-        <h2>Research</h2>
-        <p>
-          My research focuses on radio detection methods for high-energy neutrinos, including
-          RNO-G airplane background studies, antenna simulations, and signal processing workflows.
-        </p>
-      </section>
+      <main class="main-column">
+        <header class="box title-box" id="home">
+          <h1>Heidi Gui</h1>
+          <p>physics student ✦ astroparticle physics ✦ art</p>
+        </header>
 
-      <section id="projects" class="box">
-        <h2>Projects</h2>
-        <ul>
-          <li>RNO-G airplane background identification</li>
-          <li>XFdtd antenna simulations in ice</li>
-          <li>NuRadioMC antenna response studies</li>
-          <li>Scientific plotting and waveform analysis in Python</li>
-        </ul>
-      </section>
+        <section class="box profile-card" id="about">
+          <img src="assets/profile.jpg" alt="Profile photo" class="small-pic" />
+          <div>
+            <h2>About Me</h2>
+            <p>
+              I am an undergraduate physics student at The Ohio State University
+              interested in astroparticle physics, particle physics, detector
+              instrumentation, and the overlap between science and art.
+            </p>
+          </div>
+        </section>
 
-      <section id="contact" class="box">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:heidi.h.gui@gmail.com">heidi.h.gui@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/heidigui">github.com/heidigui</a></p>
-      </section>
-    </main>
+        <section class="box" id="research">
+          <h2>Research</h2>
+          <p>
+            My research involves RNO-G radio neutrino detection, airplane
+            background studies, antenna simulations, and signal processing.
+          </p>
+        </section>
 
+        <section class="box" id="projects">
+          <h2>Projects</h2>
+          <ul>
+            <li>RNO-G airplane background identification</li>
+            <li>XFdtd antenna simulations in ice</li>
+            <li>NuRadioMC antenna response studies</li>
+            <li>Python scientific plotting and waveform analysis</li>
+          </ul>
+        </section>
+
+        <section class="box contact-grid" id="contact">
+          <h2>Contacting Heidi</h2>
+          <a href="mailto:heidi.h.gui@gmail.com">Send Email</a>
+          <a href="https://github.com/heidigui">GitHub</a>
+          <a href="#">CV</a>
+          <a href="#">Art</a>
+        </section>
+      </main>
+
+    </div>
   </div>
 </body>
 </html>
