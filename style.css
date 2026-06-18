@@ -12,7 +12,7 @@ body {
 .site {
   max-width: 980px;
   margin: 0 auto;
-  background: #eef3f8;
+  background: #d8e4ee;
   border-left: 1px solid #9aaaba;
   border-right: 1px solid #9aaaba;
   min-height: 100vh;
@@ -41,8 +41,8 @@ body {
 }
 
 .box {
-  background: linear-gradient(#f8fbff, #dce7f0);
-  border: 1px solid #9aaaba;
+  background: linear-gradient(#edf5fb, #d4e2ee);
+  border: 1px solid #7f99ad;
   box-shadow: inset 0 0 8px #ffffff, 2px 2px 4px #9aaaba;
   margin-bottom: 12px;
   padding: 12px;
@@ -66,8 +66,12 @@ body {
 
 .title-box {
   text-align: right;
-  background: linear-gradient(90deg, #cfdde8, #eef7ff, #8ca4b8);
-}
+  background: linear-gradient(
+      90deg,
+      #8ba5bc,
+      #dbeaf6,
+      #5f7990
+);
 
 h1 {
   font-family: Georgia, serif;
@@ -80,7 +84,7 @@ h1 {
 }
 
 h2 {
-  background: linear-gradient(90deg, #6f8799, #dce7f0);
+  background: linear-gradient(90deg, #5f7990, #8fa9be);
   color: white;
   font-size: 13px;
   padding: 4px 8px;
