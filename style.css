@@ -1,8 +1,11 @@
 body {
   margin: 0;
   font-family: Verdana, Arial, sans-serif;
-  font-size: 13px;
-  background: #d8e1ea;
+
+  background-image: url("images/blue-y2k.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+
   color: #263849;
 }
 
