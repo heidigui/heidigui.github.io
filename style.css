@@ -1,72 +1,27 @@
 body {
-  margin: 0;
-  font-family: "Trebuchet MS", Verdana, sans-serif;
-  background:
-    radial-gradient(circle at top left, #ffd6f6, transparent 35%),
-    radial-gradient(circle at bottom right, #c7d2fe, transparent 35%),
-    #1e1b4b;
-  color: #2b124c;
+    background-color: #000033;
+    background-image: url("https://t4.ftcdn.net/jpg/02/00/99/09/360_F_200990953_ZUQhJDEQGCmJ10H9mLq8XjEckDQQjau9.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: fixed;
 }
 
-.page {
-  max-width: 1050px;
-  margin: 30px auto;
-  display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 20px;
-  padding: 15px;
+/* MySpace table styling */
+table,
+tr,
+td {
+    background: transparent;
+    border: 0;
 }
 
-.box {
-  background: #fff7ff;
-  border: 3px double #a855f7;
-  border-radius: 12px;
-  box-shadow: 6px 6px 0 #7c3aed;
-  padding: 18px;
-  margin-bottom: 20px;
+table table {
+    border: 0;
 }
 
-.sidebar a {
-  display: block;
-  background: #f0abfc;
-  color: #3b0764;
-  padding: 8px;
-  margin: 8px 0;
-  border: 2px solid #9333ea;
-  text-decoration: none;
-  font-weight: bold;
+table table table table {
+    border: 0;
 }
 
-.sidebar a:hover {
-  background: #c084fc;
-}
-
-.hero {
-  text-align: center;
-  background: #fdf4ff;
-}
-
-h1 {
-  font-size: 2.4rem;
-  color: #7e22ce;
-  text-shadow: 2px 2px #f0abfc;
-}
-
-h2, h3 {
-  color: #6b21a8;
-  border-bottom: 2px dotted #d946ef;
-}
-
-a {
-  color: #7e22ce;
-}
-
-ul {
-  padding-left: 22px;
-}
-
-@media (max-width: 750px) {
-  .page {
-    grid-template-columns: 1fr;
-  }
+table table table {
+    background-color: #000099;
 }
