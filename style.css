@@ -1,27 +1,129 @@
 body {
-    background-color: #000033;
-    background-image: url("images/blue-y2k.jpg");
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-attachment: fixed;
+  margin: 0;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 13px;
+  background: #d8e1ea;
+  color: #263849;
 }
 
-/* MySpace table styling */
-table,
-tr,
-td {
-    background: transparent;
-    border: 0;
+.site {
+  max-width: 980px;
+  margin: 0 auto;
+  background: #eef3f8;
+  border-left: 1px solid #9aaaba;
+  border-right: 1px solid #9aaaba;
+  min-height: 100vh;
 }
 
-table table {
-    border: 0;
+.top-nav {
+  background: linear-gradient(#71879b, #dce6ef, #71879b);
+  text-align: center;
+  padding: 8px;
+  color: white;
+  border-bottom: 2px ridge #ffffff;
 }
 
-table table table table {
-    border: 0;
+.top-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
 }
 
-table table table {
-    background-color: #000099;
+.layout {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 12px;
+  padding: 12px;
+}
+
+.box {
+  background: linear-gradient(#f8fbff, #dce7f0);
+  border: 1px solid #9aaaba;
+  box-shadow: inset 0 0 8px #ffffff, 2px 2px 4px #9aaaba;
+  margin-bottom: 12px;
+  padding: 12px;
+}
+
+.banner-box {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8aa0b5;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.image-box img {
+  width: 100%;
+  border: 3px solid white;
+  box-shadow: 0 0 4px #607080;
+}
+
+.title-box {
+  text-align: right;
+  background: linear-gradient(90deg, #cfdde8, #eef7ff, #8ca4b8);
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  font-style: italic;
+  letter-spacing: 3px;
+  color: #ffffff;
+  text-shadow: 2px 2px 3px #4e6578;
+  margin: 5px;
+}
+
+h2 {
+  background: linear-gradient(90deg, #6f8799, #dce7f0);
+  color: white;
+  font-size: 13px;
+  padding: 4px 8px;
+  margin: -12px -12px 10px -12px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 13px;
+  color: #1d2f42;
+}
+
+.profile-card {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.small-pic {
+  width: 145px;
+  border: 4px solid white;
+  box-shadow: 0 0 6px #6f8799;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+.contact-grid h2 {
+  grid-column: span 2;
+}
+
+a {
+  color: #344f68;
+  font-weight: bold;
+}
+
+@media (max-width: 750px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
 }
