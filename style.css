@@ -1,50 +1,72 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: #e5e7eb;
-  line-height: 1.6;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  background:
+    radial-gradient(circle at top left, #ffd6f6, transparent 35%),
+    radial-gradient(circle at bottom right, #c7d2fe, transparent 35%),
+    #1e1b4b;
+  color: #2b124c;
 }
 
-header {
-  padding: 80px 20px;
+.page {
+  max-width: 1050px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 20px;
+  padding: 15px;
+}
+
+.box {
+  background: #fff7ff;
+  border: 3px double #a855f7;
+  border-radius: 12px;
+  box-shadow: 6px 6px 0 #7c3aed;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  display: block;
+  background: #f0abfc;
+  color: #3b0764;
+  padding: 8px;
+  margin: 8px 0;
+  border: 2px solid #9333ea;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sidebar a:hover {
+  background: #c084fc;
+}
+
+.hero {
   text-align: center;
-  background: linear-gradient(135deg, #1e293b, #312e81);
+  background: #fdf4ff;
 }
 
 h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+  font-size: 2.4rem;
+  color: #7e22ce;
+  text-shadow: 2px 2px #f0abfc;
 }
 
-.tagline {
-  color: #c4b5fd;
-}
-
-main {
-  max-width: 850px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-section {
-  background: #111827;
-  padding: 25px;
-  margin-bottom: 25px;
-  border-radius: 14px;
-  border: 1px solid #374151;
-}
-
-h2 {
-  color: #a5b4fc;
+h2, h3 {
+  color: #6b21a8;
+  border-bottom: 2px dotted #d946ef;
 }
 
 a {
-  color: #93c5fd;
+  color: #7e22ce;
 }
 
-footer {
-  text-align: center;
-  padding: 30px;
-  color: #9ca3af;
+ul {
+  padding-left: 22px;
+}
+
+@media (max-width: 750px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
 }
