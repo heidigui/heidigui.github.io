@@ -41,6 +41,19 @@ body {
   display: block;
 }
 
+.small-photo {
+  width: 50%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.photo-row {
+  display: flex;
+  gap: 5px;
+}
+
 .layout {
   display: grid;
   grid-template-columns: 40% 60%;
@@ -148,4 +161,5 @@ a {
     flex-direction: column;
     text-align: center;
   }
+}
 }
