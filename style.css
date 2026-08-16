@@ -1,29 +1,37 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: Verdana, Arial, sans-serif;
 
-  background-image: url("images/blue-y2k.jpg");
+  background-image: url("images/aesthetics/background2.jpg");
   background-repeat: repeat;
   background-attachment: fixed;
 
-  color: #263849;
+  color: #172D52;
 }
 
 .site {
   max-width: 980px;
   margin: 0 auto;
-  background: #d8e4ee;
-  border-left: 1px solid #9aaaba;
-  border-right: 1px solid #9aaaba;
+  background: #BCCCE4;
+  border-left: 1px solid #7186AE;
+  border-right: 1px solid #7186AE;
   min-height: 100vh;
 }
 
 .top-nav {
-  background: linear-gradient(#71879b, #dce6ef, #71879b);
+  background: linear-gradient(
+    #7189B5 0%,
+    #40577F 45%,
+    #263D68 50%,
+    #718BB9 100%
+  );
   text-align: center;
   padding: 8px;
   color: white;
-  border-bottom: 2px ridge #ffffff;
+  border-bottom: 2px ridge #EEF3FF;
 }
 
 .top-nav a {
@@ -33,18 +41,21 @@ body {
   font-size: 12px;
 }
 
-.wide-photo {
+.profile-photo {
   width: 100%;
-  height: 250px;
+  height: 340px;
   object-fit: cover;
-  object-position: center;
+  object-position: center 35%;
   display: block;
 }
 
-.small-photo {
-  flex: 1;
-  min-width: 0;
-  height: 250px;
+.profile-photo + h2 {
+  margin-top: 12px;
+}
+
+.wide-photo {
+  width: 100%;
+  height: 270px;
   object-fit: cover;
   object-position: center;
   display: block;
@@ -53,6 +64,7 @@ body {
 .photo-row {
   display: flex;
   gap: 5px;
+  width: 100%;
 }
 
 .photo-row .small-photo {
@@ -65,15 +77,23 @@ body {
 
 .layout {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 2fr 3fr;
   gap: 12px;
   padding: 12px;
 }
 
 .box {
-  background: linear-gradient(#edf5fb, #d4e2ee);
-  border: 1px solid #7f99ad;
-  box-shadow: inset 0 0 8px #ffffff, 2px 2px 4px #9aaaba;
+  background: linear-gradient(
+    #DCE6F5,
+    #B7C9E3
+  );
+
+  border: 1px solid #7186AE;
+
+  box-shadow:
+    inset 0 0 8px #F4F7FF,
+    2px 2px 4px #7083A5;
+
   margin-bottom: 12px;
   padding: 12px;
 }
@@ -84,15 +104,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #8aa0b5;
+  color: #7089B7;
   font-weight: bold;
   letter-spacing: 1px;
 }
 
 .banner-gif {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .image-box img:not(.small-photo) {
@@ -103,12 +123,14 @@ body {
 
 .title-box {
   text-align: right;
+
   background: linear-gradient(
-      90deg,
-      #8ba5bc,
-      #dbeaf6,
-      #5f7990
-);
+    90deg,
+    #7089B7,
+    #D9E4F5,
+    #526B8E
+  );
+}
 
 h1 {
   font-family: Georgia, serif;
@@ -121,7 +143,13 @@ h1 {
 }
 
 h2 {
-  background: linear-gradient(90deg, #5f7990, #8fa9be);
+  background: linear-gradient(
+    #7189B5 0%,
+    #40577F 45%,
+    #263D68 50%,
+    #718BB9 100%
+  );
+
   color: white;
   font-size: 13px;
   padding: 4px 8px;
@@ -135,9 +163,7 @@ h3 {
 }
 
 .profile-card {
-  display: flex;
-  gap: 16px;
-  align-items: center;
+  display: block;
 }
 
 .small-pic {
@@ -157,7 +183,7 @@ h3 {
 }
 
 a {
-  color: #344f68;
+  color: #304D80;
   font-weight: bold;
 }
 
@@ -170,5 +196,12 @@ a {
     flex-direction: column;
     text-align: center;
   }
-}
+
+  .photo-row {
+    flex-direction: column;
+  }
+
+  .photo-row .small-photo {
+    width: 100%;
+  }
 }
