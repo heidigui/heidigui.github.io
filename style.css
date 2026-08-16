@@ -116,6 +116,13 @@ body {
   object-fit: cover;
 }
 
+.sideways-gif {
+  height: 186%;
+  width: auto;
+  object-fit: cover;
+  transform: rotate(90deg);
+}
+
 .image-box img:not(.small-photo) {
   width: 100%;
   border: 1px solid #7186AE;
