@@ -42,11 +42,17 @@ body {
 }
 
 .small-photo {
-  width: 50%;
+  flex: 1;
+  min-width: 0;
   height: 250px;
   object-fit: cover;
   object-position: center;
   display: block;
+}
+
+.photo-row {
+  display: flex;
+  gap: 5px;
 }
 
 .photo-row {
